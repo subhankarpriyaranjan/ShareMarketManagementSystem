@@ -12,7 +12,7 @@ public  final class dbconnect {
 	try
 	{
 		Class.forName("oracle.jdbc.driver.OracleDriver");
-		con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:XE","gsr","gsr");
+		con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:XE","username","password");
 		st=con.createStatement();
 	}
 	catch(Exception e)
