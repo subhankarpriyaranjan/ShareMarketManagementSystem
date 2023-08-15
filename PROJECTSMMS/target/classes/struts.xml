@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+
+	<package name="default" extends="struts-default">
+		<action name="loginaction" class="p1.loginaction"
+			method="logindata">
+			<result name="admin">/admhome.jsp</result>
+			<result name="user">/customhome.jsp</result>
+			<result name="broker">/brokerhome.jsp</result>
+			<result name="company">/companyhome.jsp</result>
+			<result name="loginfail">/home.jsp</result>
+		</action>
+		<action name="newuser" class="p1.loginaction"
+			method="Registeruserdata">
+			<result name="registersuccessuser">/nuser.jsp</result>
+		</action>
+		<action name="newbroker" class="p1.loginaction"
+			method="Registerbrokerdata">
+			<result name="registersuccessbroker">/broker.jsp</result>
+		</action>
+		<action name="newcompany" class="p1.loginaction"
+			method="Registercompanydata">
+			<result name="registersuccesscompany">/ncompany.jsp</result>
+		</action>
+		<action name="combo1" class="p1.loginaction" method="combo1">
+			<result name="confirm">/approvrejcom.jsp</result>
+		</action>
+		<action name="apprejcom" class="p1.loginaction"
+			method="apprejcom">
+			<result name="displaycomp">/displaycomp.jsp</result>
+		</action>
+		<action name="combo4" class="p1.loginaction" method="combo2">
+			<result name="confirm">/approvrejbrok.jsp</result>
+		</action>
+		<action name="apprejbroker" class="p1.loginaction"
+			method="apprejbroker">
+			<result name="displaybroker">/displaybroker.jsp</result>
+		</action>
+		<action name="combo3" class="p1.loginaction" method="combo3">
+			<result name="confirm">/approvrejcust.jsp</result>
+		</action>
+		<action name="apprejcust" class="p1.loginaction"
+			method="apprejcust">
+			<result name="displaycust">/displaycust.jsp</result>
+		</action>
+		<action name="approvecom" class="p1.loginaction"
+			method="AppCompany">
+			<result name="confirm">/displaycomp.jsp</result>
+		</action>
+		<action name="rejectcom" class="p1.loginaction"
+			method="RejCompany">
+			<result name="confirm">/displaycomp.jsp</result>
+		</action>
+		<action name="approvecust" class="p1.loginaction"
+			method="AppCustomer">
+			<result name="confirm">/displaycust.jsp</result>
+		</action>
+		<action name="rejectcust" class="p1.loginaction"
+			method="RejCustomer">
+			<result name="confirm">/displaycust.jsp</result>
+		</action>
+		<action name="approvebroker" class="p1.loginaction"
+			method="AppBroker">
+			<result name="confirm">/displaybroker.jsp</result>
+		</action>
+		<action name="rejectbroker" class="p1.loginaction"
+			method="RejBroker">
+			<result name="confirm">/displaybroker.jsp</result>
+		</action>
+		<action name="combo2" class="p1.loginaction" method="combo1">
+			<result name="confirm">/choosedelcomp.jsp</result>
+		</action>
+
+		<action name="combo5" class="p1.loginaction" method="combo5">
+			<result name="confirm">/choosedelcutomer.jsp</result>
+		</action>
+
+		<action name="deletcustomer" class="p1.loginaction"
+			method="deletcustomer">
+			<result name="confirm">/deletecustomer.jsp</result>
+		</action>
+		<action name="deletecustomerrec" class="p1.loginaction"
+			method="deletcustomerrec">
+			<result name="confirm">/choosedelcutomer.jsp</result>
+		</action>
+
+		<action name="deletcomp" class="p1.loginaction"
+			method="DeleteCompany">
+			<result name="delcomp">/deletecompdetails.jsp</result>
+		</action>
+		<action name="delete" class="p1.loginaction"
+			method="deleteconfirmcomp">
+			<result name="confirmdelete">/deletecompdetails.jsp</result>
+		</action>
+		<action name="deleteboker" class="p1.loginaction"
+			method="combo2">
+			<result name="confirm">/choosebroker.jsp</result>
+		</action>
+		<action name="editbroker1" class="p1.loginaction"
+			method="DeleteBroker">
+			<result name="success">/deletebrokdetails.jsp</result>
+		</action>
+		<action name="delbrok1" class="p1.loginaction"
+			method="deleteconfirmbrok">
+			<result name="confirm">/choosebroker.jsp</result>
+		</action>
+		<action name="tips" class="p1.loginaction"
+			method="Registetipsdata">
+			<result name="tips1">/home.jsp</result>
+		</action>
+		<action name="tips2" class="p1.loginaction" method="tips">
+			<result name="tiips">/showtips.jsp</result>
+		</action>
+
+		<action name="editcomp" class="p1.loginaction"
+			method="EditCompany">
+			<result name="editcomp1">/editcompany.jsp</result>
+		</action>
+		<action name="editcomp1" class="p1.loginaction"
+			method="editconfirmcomp">
+			<result name="confirmupdate">/editcompany.jsp</result>
+		</action>
+		<action name="entershare" class="p1.loginaction"
+			method="Registershare">
+			<result name="compshr">/entershare.jsp</result>
+		</action>
+		<action name="insertshare" class="p1.loginaction"
+			method="Registersharedata">
+			<result name="registersuccessshare">/entershare.jsp</result>
+		</action>
+		<action name="viewbrok" class="p1.loginaction"
+			method="Brokerdetail">
+			<result name="broker">/viewbrokprof.jsp</result>
+		</action>
+		<action name="editbrok" class="p1.loginaction"
+			method="Editbroker">
+			<result name="editbrok">/editbrokdetails.jsp</result>
+		</action>
+		<action name="editbrok12" class="p1.loginaction"
+			method="editconfirmbroker">
+			<result name="confirmupdate">/editbrokdetails.jsp</result>
+		</action>
+		<action name="editshare" class="p1.loginaction"
+			method="EditShare">
+			<result name="editshare">/editshare.jsp</result>
+		</action>
+		<action name="updateshare" class="p1.loginaction"
+			method="editconfirmshare">
+			<result name="confirmupdate">/editshare.jsp</result>
+		</action>
+		<action name="viewsharprice" class="p1.loginaction"
+			method="viewshare">
+			<result name="viewshare">/viewsharprice.jsp</result>
+		</action>
+		<action name="choosecustomer" class="p1.loginaction"
+			method="combo3">
+
+		</action>
+		<action name="custdetails" class="p1.loginaction"
+			method="displaycust">
+			<result name="displaycust">/customerdetails.jsp</result>
+		</action>
+		<action name="editcustom" class="p1.loginaction"
+			method="displaycust1">
+			<result name="displaycust1">/editcustomdetails.jsp</result>
+		</action>
+		<action name="updatecust" class="p1.loginaction"
+			method="editconfirmcust">
+			<result name="confirmupdate">/editcustomdetails.jsp</result>
+		</action>
+		<action name="searchbrok" class="p1.loginaction"
+			method="combo2">
+			<result name="confirm">/searchbrok.jsp</result>
+		</action>
+		<action name="searchbroker" class="p1.loginaction"
+			method="Viewbrok">
+			<result name="editbrok">/brokdetails4user.jsp</result>
+		</action>
+		<action name="searchcomp" class="p1.loginaction"
+			method="combocomp">
+			<result name="confirm">/searchcomp.jsp </result>
+		</action>
+		<action name="showcomp" class="p1.loginaction"
+			method="viewshare1">
+			<result name="viewshare1">/compdetails4user.jsp</result>
+			<result name="confirm">/choosecustomer.jsp</result>
+		</action>
+		<action name="feedbackcomp" class="p1.loginaction"
+			method="Registerfeedback">
+			<result name="feedback">/detailsoffeedback.jsp</result>
+		</action>
+
+		<action name="showfeedback1" class="p1.loginaction"
+			method="viewfeedback">
+			<result name="view">/showfeedback.jsp</result>
+		</action>
+		<action name="viewfb" class="p1.loginaction" method="viewfb">
+			<result name="show">/show.jsp</result>
+		</action>
+		<action name="reply" class="p1.loginaction" method="replyfb">
+			<result name="show">/adminreply.jsp</result>
+		</action>
+		<action name="adminreply" class="p1.loginaction"
+			method="adminreply">
+			<result name="show">/adminreply.jsp</result>
+		</action>
+		<action name="byself" class="p1.loginaction" method="self">
+			<result name="Self">/byself.jsp</result>
+		</action>
+
+		<action name="custdetail" class="p1.loginaction"
+			method="custdetail">
+			<result name="confirm">/custdetail.jsp</result>
+		</action>
+
+		<action name="detailsofbank" class="p1.loginaction"
+			method="Registerdetail">
+			<result name="cview">/customhome.jsp</result>
+		</action>
+		<action name="self" class="p1.loginaction" method="Proc">
+			<result name="Proc">/purchaseshare.jsp</result>
+			<result name="Proc1">/saleshare.jsp</result>
+		</action>
+		<action name="saleself" class="p1.loginaction"
+			method="purchase">
+			<result name="purpass">/transaction.jsp</result>
+			<result name="purfail">/purchaseshare.jsp</result>
+		</action>
+		<action name="sale1" class="p1.loginaction" method="Sale1">
+			<result name="salefail">/saleshare.jsp</result>
+			<result name="salepass">/transaction.jsp</result>
+		</action>
+		<action name="bybroker" class="p1.loginaction" method="bybroks">
+			<result name="Trans">/bybroker.jsp</result>
+		</action>
+		<action name="bybrok" class="p1.loginaction" method="bybrok">
+			<result name="trans">/transaction.jsp</result>
+		</action>
+		<action name="seehistory" class="p1.loginaction"
+			method="seeHistory">
+			<result name="Share">/seehistory.jsp</result>
+		</action>
+		<action name="seedetails" class="p1.loginaction"
+			method="seeDetails">
+			<result name="sucess">/seeDetails.jsp</result>
+		</action>
+		<action name="sale" class="p1.loginaction" method="brkSale">
+			<result name="success">/sale.jsp</result>
+		</action>
+		<action name="saleprocess" class="p1.loginaction"
+			method="saleProcess">
+			<result name="ssaleshr">/brksale1.jsp</result>
+		</action>
+		<action name="saleprocessed" class="p1.loginaction"
+			method="saleProcessed">
+			<result name="success">/broktrans.jsp</result>
+		</action>
+		<action name="purchase" class="p1.loginaction"
+			method="brkPurchase">
+			<result name="success">/brkpurchage.jsp</result>
+		</action>
+		<action name="purchaseprocess" class="p1.loginaction"
+			method="purchaseProcess">
+			<result name="spurchaseshr">/brokerperchageprocess.jsp</result>
+		</action>
+		<action name="purchaseprocessed" class="p1.loginaction"
+			method="purchaseProcessed">
+			<result name="successd">/broktrans.jsp</result>
+		</action>
+		<action name="ownshare" class="p1.loginaction"
+			method="seeownshare">
+			<result name="viewshare1">/seeownshare.jsp</result>
+		</action>
+		<action name="confpsww" class="p1.loginaction"
+			method="forgotpsw">
+			<result name="updtpsw">/resetpsw.jsp</result>
+		</action>
+		<action name="confpsw" class="p1.loginaction"
+			method="confrmpsw">
+			<result name="updtpswconfrm">/resetpsw.jsp</result>
+			<result name="updtpswfail">/resetpsw.jsp</result>
+		</action>
+
+
+	</package>
+
+</struts>    

@@ -1,0 +1,161 @@
+body {
+	background-image:url("https://images.pexels.com/photos/186464/pexels-photo-186464.jpeg");
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    justify-content: center;
+   /* background: #333;*/
+}
+
+#wrapper {
+    width: 100%;
+    margin: 0 auto;
+    border: 2px solid blue; /* Add border */
+    background-color: blue; /* Set background color */
+}
+
+#header-wrapper {
+    background-color: #333;
+    height: 100px;
+}
+
+#header {
+    width: 960px;
+    margin: 0 auto;
+}
+
+#logo {
+    float: left;
+}
+
+#logo h1 {
+    margin: 0;
+}
+
+#logo h1 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#menu {
+    float: right;
+}
+
+#menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+#menu li {
+    display: inline-block;
+}
+
+#menu li a {
+    display: block;
+    padding: 0 10px;
+    line-height: 100px;
+    color: #fff;
+    text-decoration: none;
+}
+
+#banner img {
+    width: 100%;
+}
+
+.page-wrapper {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.content {
+    padding-top: 20px;
+}
+
+form {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto; 
+    width: auto;
+    padding: 150px 350px; /* Adjust padding values */
+    background-color: #ffc93c;
+    border-radius: 40px;
+    box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.5),
+                5px 5px 15px rgba(0, 0, 0, 0.1);
+    border: 2px solid #ccc;
+}
+
+.text-feild {
+    display: block;
+    margin-bottom: 1em;
+    width: auto;
+    padding: 1.2em .8em;
+}
+
+.Radio-btn {
+    display: block;
+    margin-bottom: .5em;
+}
+
+.link {
+    display: inline-block;
+    margin-top: .5em;
+}
+
+.link-btn {
+    background-color: #80ff00;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/* Button hover effect */
+.link-btn:hover {
+    background-color: #9896f1;
+}
+
+.new {
+    text-align: center;
+    
+}
+
+input[type=text] {
+    width: auto;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 18px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
