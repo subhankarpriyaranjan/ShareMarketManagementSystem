@@ -1,2 +1,2 @@
 # ShareMarketManagementSystem
-This is a share market management system using java core,jsp,and struts framework and there is also css but that project is in working .............
+I am currently developing a stock market management system using Java Core, JSP, and the Struts framework. Additionally, the project includes CSS for styling.
